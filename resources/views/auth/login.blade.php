@@ -4,7 +4,7 @@
 @section('content')
 <div class="max-w-md mx-auto mt-8 bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
     <div class="mb-6">
-        <h2 class="text-xl font-bold text-slate-900">Sign in to WebotApp Indian College ERP</h2>
+        <h2 class="text-xl font-bold text-slate-900">Sign in to Indian College ERP</h2>
         <p class="text-xs text-slate-500 mt-1">Authentication is required to access the College Management System.</p>
     </div>
 
