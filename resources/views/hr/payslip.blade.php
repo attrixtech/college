@@ -6,7 +6,7 @@
 <div class="max-w-2xl mx-auto bg-white border border-slate-300 rounded-xl p-8">
     <div class="flex justify-between items-start border-b border-slate-200 pb-4 mb-5">
         <div>
-            <h2 class="text-xl font-bold text-slate-900">{{ $payroll->employee->college->name ?? 'VidyaVihar Institute of Technology' }}</h2>
+            <h2 class="text-xl font-bold text-slate-900">{{ $payroll->employee->college->name ?? 'WebotApp Institute of Technology' }}</h2>
             <p class="text-xs text-slate-500">Salary Payslip for {{ date('F', mktime(0,0,0,$payroll->month,1)) }} {{ $payroll->year }}</p>
         </div>
         <button onclick="window.print()" class="no-print px-3 py-1.5 rounded bg-indigo-600 text-white text-xs font-semibold">Print Payslip</button>

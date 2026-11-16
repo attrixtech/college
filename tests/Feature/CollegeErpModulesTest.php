@@ -58,16 +58,16 @@ class CollegeErpModulesTest extends TestCase
     {
         // Wrong password rejected
         $this->post('/login', [
-            'email' => 'admin@vidyaerp.edu.in',
+            'email' => 'admin@webotapp.edu.in',
             'password' => 'wrong-password',
         ])->assertSessionHasErrors('email');
         $this->assertGuest();
 
         // Inactive user rejected
-        $studentUser = User::where('email', 'student@vidyaerp.edu.in')->firstOrFail();
+        $studentUser = User::where('email', 'student@webotapp.edu.in')->firstOrFail();
         $studentUser->update(['status' => 'Inactive']);
         $this->post('/login', [
-            'email' => 'student@vidyaerp.edu.in',
+            'email' => 'student@webotapp.edu.in',
             'password' => 'password',
         ])->assertSessionHasErrors('email');
         $this->assertGuest();
@@ -75,7 +75,7 @@ class CollegeErpModulesTest extends TestCase
         // Restore active student & test proper login + RBAC
         $studentUser->update(['status' => 'Active']);
         $this->post('/login', [
-            'email' => 'student@vidyaerp.edu.in',
+            'email' => 'student@webotapp.edu.in',
             'password' => 'password',
         ])->assertRedirect('/portal/student');
         $this->assertAuthenticatedAs($studentUser);
@@ -91,7 +91,7 @@ class CollegeErpModulesTest extends TestCase
 
         // Faculty login + RBAC
         $this->post('/login', [
-            'email' => 'faculty@vidyaerp.edu.in',
+            'email' => 'faculty@webotapp.edu.in',
             'password' => 'password',
         ])->assertRedirect('/portal/faculty');
         $this->get('/portal/faculty')->assertStatus(200);
@@ -102,7 +102,7 @@ class CollegeErpModulesTest extends TestCase
 
         // Parent login + RBAC
         $this->post('/login', [
-            'email' => 'parent@vidyaerp.edu.in',
+            'email' => 'parent@webotapp.edu.in',
             'password' => 'password',
         ])->assertRedirect('/portal/parent');
         $this->get('/portal/parent')->assertStatus(200);
@@ -111,7 +111,7 @@ class CollegeErpModulesTest extends TestCase
 
     public function test_all_admin_erp_module_pages_render_without_error(): void
     {
-        $admin = User::where('email', 'admin@vidyaerp.edu.in')->firstOrFail();
+        $admin = User::where('email', 'admin@webotapp.edu.in')->firstOrFail();
         $this->actingAs($admin);
 
         $routes = [
@@ -152,7 +152,7 @@ class CollegeErpModulesTest extends TestCase
 
     public function test_printable_documents_and_portals_render_without_error(): void
     {
-        $admin = User::where('email', 'admin@vidyaerp.edu.in')->firstOrFail();
+        $admin = User::where('email', 'admin@webotapp.edu.in')->firstOrFail();
         $this->actingAs($admin);
 
         $student = Student::firstOrFail();
@@ -179,7 +179,7 @@ class CollegeErpModulesTest extends TestCase
 
     public function test_core_workflows_work_end_to_end(): void
     {
-        $admin = User::where('email', 'admin@vidyaerp.edu.in')->firstOrFail();
+        $admin = User::where('email', 'admin@webotapp.edu.in')->firstOrFail();
         $this->actingAs($admin);
 
         $course = \App\Models\Course::firstOrFail();

@@ -1,4 +1,4 @@
-# VidyaERP — Complete Indian College Management Software
+# WebotApp Indian College ERP — Complete Higher-Education Management System
 
 A comprehensive, production-ready Indian College & Higher-Education Management System built on **Laravel 13** and **MySQL (XAMPP)**, compliant with **NEP 2020**, **CBCS**, **AISHE**, and **NAAC / NIRF** requirements.
 
@@ -93,7 +93,7 @@ A comprehensive, production-ready Indian College & Higher-Education Management S
 ## 🔒 Security & Roles
 
 Authentication is strictly required across the entire platform. Pre-seeded demo user accounts (password: `password`):
-- **Super Administrator**: `admin@vidyaerp.edu.in`
-- **Faculty Member**: `faculty@vidyaerp.edu.in`
-- **Student**: `student@vidyaerp.edu.in`
-- **Parent / Guardian**: `parent@vidyaerp.edu.in`
+- **Super Administrator**: `admin@webotapp.edu.in`
+- **Faculty Member**: `faculty@webotapp.edu.in`
+- **Student**: `student@webotapp.edu.in`
+- **Parent / Guardian**: `parent@webotapp.edu.in`

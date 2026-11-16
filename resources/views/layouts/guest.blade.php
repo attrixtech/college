@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'VidyaERP') — Indian College Management Portal</title>
+    <title>@yield('title', 'WebotApp ERP') — WebotApp Indian College ERP</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-100 text-slate-800 antialiased min-h-screen flex flex-col">
 <header class="bg-slate-900 text-white px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-    <a href="{{ route('home') }}" class="text-xl font-bold tracking-tight">Vidya<span class="text-amber-400">ERP</span> <span class="text-xs font-normal text-slate-400 ml-2">VidyaVihar University Group</span></a>
+    <a href="{{ route('home') }}" class="text-xl font-bold tracking-tight">Webot<span class="text-amber-400">App</span> <span class="text-sm font-semibold text-indigo-400">ERP</span> <span class="text-xs font-normal text-slate-400 ml-2">WebotApp University Group</span></a>
     <nav class="flex items-center gap-4 text-sm">
         <a href="{{ route('login') }}" class="px-3 py-1.5 rounded-md bg-indigo-600 hover:bg-indigo-500 font-medium">ERP Login</a>
     </nav>
@@ -33,7 +33,7 @@
 </main>
 
 <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
-    VidyaERP &bull; Complete 30-Module Indian College Management Software (NEP 2020 &amp; NAAC Ready)
+    WebotApp Indian College ERP &bull; Complete 30-Module Institutional Suite (NEP 2020 &amp; NAAC Ready)
 </footer>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <div class="max-w-2xl mx-auto bg-white border border-slate-300 rounded-xl p-8">
     <div class="flex items-start justify-between border-b border-slate-200 pb-4 mb-6">
         <div>
-            <h2 class="text-xl font-bold text-slate-900">{{ $application->course->department->college->name ?? 'VidyaVihar University Group' }}</h2>
+            <h2 class="text-xl font-bold text-slate-900">{{ $application->course->department->college->name ?? 'WebotApp University Group' }}</h2>
             <p class="text-xs text-slate-500">Official Admission &amp; Application Fee Receipt</p>
         </div>
         <button onclick="window.print()" class="no-print px-3 py-1.5 rounded bg-indigo-600 text-white text-xs font-medium">Print Receipt</button>

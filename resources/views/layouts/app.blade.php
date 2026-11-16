@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'VidyaERP') — Complete Indian College Management Software</title>
+    <title>@yield('title', 'WebotApp ERP') — WebotApp Indian College ERP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -20,7 +20,7 @@
     <aside class="no-print w-64 bg-slate-900 text-slate-200 flex-shrink-0 flex flex-col">
         <div class="px-5 py-4 border-b border-slate-800 flex items-center justify-between">
             <div>
-                <div class="text-lg font-bold tracking-tight text-white">Vidya<span class="text-amber-400">ERP</span></div>
+                <div class="text-lg font-bold tracking-tight text-white">Webot<span class="text-amber-400">App</span> <span class="text-xs font-normal text-indigo-400">ERP</span></div>
                 <div class="text-[11px] text-slate-400">Indian Higher-Ed Suite (30 Modules)</div>
             </div>
         </div>

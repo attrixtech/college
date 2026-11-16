@@ -6,7 +6,7 @@
 <div class="max-w-3xl mx-auto bg-white border-4 border-double border-indigo-900 rounded-xl p-10">
     <div class="flex justify-between items-start border-b-2 border-indigo-900 pb-4 mb-8">
         <div>
-            <h2 class="text-2xl font-bold text-indigo-950 uppercase">{{ $certificate->student->college->name ?? 'VidyaVihar Institute of Technology' }}</h2>
+            <h2 class="text-2xl font-bold text-indigo-950 uppercase">{{ $certificate->student->college->name ?? 'WebotApp Institute of Technology' }}</h2>
             <p class="text-xs text-slate-600">{{ $certificate->student->college->university_affiliation ?? '' }} &bull; NAAC {{ $certificate->student->college->naac_grade ?? 'A+' }}</p>
         </div>
         <button onclick="window.print()" class="no-print px-3 py-1.5 rounded bg-indigo-600 text-white text-xs font-semibold">Print Certificate</button>
