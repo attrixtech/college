@@ -176,7 +176,9 @@ Route::middleware('auth')->group(function () {
 
         Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
         Route::post('/settings/campuses', [SettingsController::class, 'storeCampus'])->name('settings.campuses.store');
+        Route::post('/settings/campuses/{campus}', [SettingsController::class, 'updateCampus'])->name('settings.campuses.update');
         Route::post('/settings/colleges', [SettingsController::class, 'storeCollege'])->name('settings.colleges.store');
+        Route::post('/settings/colleges/{college}', [SettingsController::class, 'updateCollege'])->name('settings.colleges.update');
         Route::post('/settings/update', [SettingsController::class, 'updateSetting'])->name('settings.update');
         Route::get('/settings/export-students', [SettingsController::class, 'exportStudentsCsv'])->name('settings.export_students');
         Route::get('/settings/backup', [SettingsController::class, 'backupDatabase'])->name('settings.backup');

@@ -72,6 +72,54 @@ class SettingsController extends Controller
         return back()->with('success', 'College unit added under university group.');
     }
 
+    public function updateCollege(Request $request, College $college): RedirectResponse
+    {
+        $data = $request->validate([
+            'campus_id' => 'required|exists:campuses,id',
+            'code' => 'required|string|max:20|unique:colleges,code,' . $college->id,
+            'name' => 'required|string|max:255',
+            'university_affiliation' => 'nullable|string|max:255',
+            'aishe_code' => 'nullable|string|max:30',
+            'naac_grade' => 'nullable|string|max:10',
+            'principal_name' => 'nullable|string|max:255',
+        ]);
+
+        $college->update($data);
+
+        AuditLog::create([
+            'user_id' => Auth::id(),
+            'action' => 'COLLEGE_UPDATED',
+            'module' => 'Settings',
+            'description' => "Updated college: {$college->name} ({$college->code})",
+            'ip_address' => $request->ip(),
+        ]);
+
+        return back()->with('success', "College '{$college->name}' updated successfully.");
+    }
+
+    public function updateCampus(Request $request, Campus $campus): RedirectResponse
+    {
+        $data = $request->validate([
+            'code' => 'required|string|max:20|unique:campuses,code,' . $campus->id,
+            'name' => 'required|string|max:255',
+            'city' => 'required|string|max:100',
+            'state' => 'required|string|max:100',
+            'address' => 'nullable|string',
+        ]);
+
+        $campus->update($data);
+
+        AuditLog::create([
+            'user_id' => Auth::id(),
+            'action' => 'CAMPUS_UPDATED',
+            'module' => 'Settings',
+            'description' => "Updated campus: {$campus->name} ({$campus->code})",
+            'ip_address' => $request->ip(),
+        ]);
+
+        return back()->with('success', "Campus '{$campus->name}' updated successfully.");
+    }
+
     public function updateSetting(Request $request): RedirectResponse
     {
         $data = $request->validate([
