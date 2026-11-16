@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Fee & Student Accounts')
-@section('header', 'Module 10: Fee Structures, Student Accounts & Online/Offline Payments')
+@section('header', 'Fee Structures, Student Accounts & Online/Offline Payments')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

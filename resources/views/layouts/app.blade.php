@@ -30,14 +30,14 @@
             @if($roleSlug === 'super_admin')
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Overview</div>
-                <a href="{{ route('dashboard') }}" class="flex items-center px-3 py-2 rounded-lg {{ request()->routeIs('dashboard') ? 'bg-indigo-600 text-white font-medium' : 'hover:bg-slate-800' }}">1. Dashboard & Analytics</a>
+                <a href="{{ route('dashboard') }}" class="flex items-center px-3 py-2 rounded-lg {{ request()->routeIs('dashboard') ? 'bg-indigo-600 text-white font-medium' : 'hover:bg-slate-800' }}">Dashboard & Analytics</a>
             </div>
 
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Admissions & SIS</div>
-                <a href="{{ route('admissions.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('admissions.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">2. Online Admissions</a>
-                <a href="{{ route('enquiries.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('enquiries.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">3. Enquiry & CRM</a>
-                <a href="{{ route('students.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('students.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">4. Student Info (SIS)</a>
+                <a href="{{ route('admissions.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('admissions.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Online Admissions</a>
+                <a href="{{ route('enquiries.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('enquiries.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Enquiry & CRM</a>
+                <a href="{{ route('students.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('students.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Student Info (SIS)</a>
             </div>
             @endif
 
@@ -45,11 +45,11 @@
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Academics & Exams</div>
                 @if($roleSlug === 'super_admin')
-                <a href="{{ route('academics.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('academics.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">5. Courses & NEP 2020</a>
+                <a href="{{ route('academics.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('academics.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Courses & NEP 2020</a>
                 @endif
-                <a href="{{ route('timetable.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('timetable.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">6. Class & Timetable</a>
-                <a href="{{ route('attendance.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('attendance.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">7. Attendance</a>
-                <a href="{{ route('exams.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('exams.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">8. Examinations & CGPA</a>
+                <a href="{{ route('timetable.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('timetable.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Class & Timetable</a>
+                <a href="{{ route('attendance.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('attendance.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Attendance</a>
+                <a href="{{ route('exams.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('exams.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Examinations & CGPA</a>
             </div>
             @endif
 
@@ -57,18 +57,18 @@
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Finance, HR & Assets</div>
                 @if(in_array($roleSlug, ['super_admin', 'librarian', 'faculty'], true))
-                <a href="{{ route('library.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('library.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">9. Library</a>
+                <a href="{{ route('library.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('library.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Library</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'accountant'], true))
-                <a href="{{ route('fees.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('fees.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">10. Student Fees</a>
-                <a href="{{ route('finance.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('finance.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">11. College Finance</a>
+                <a href="{{ route('fees.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('fees.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Student Fees</a>
+                <a href="{{ route('finance.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('finance.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">College Finance</a>
                 @endif
                 @if($roleSlug === 'super_admin')
-                <a href="{{ route('hr.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('hr.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">12. Faculty & Staff HR</a>
+                <a href="{{ route('hr.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('hr.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Faculty & Staff HR</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'accountant'], true))
-                <a href="{{ route('payroll.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('payroll.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">13. Payroll (PF/ESI/TDS)</a>
-                <a href="{{ route('procurement.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('procurement.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">16. Procurement & Stock</a>
+                <a href="{{ route('payroll.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('payroll.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Payroll (PF/ESI/TDS)</a>
+                <a href="{{ route('procurement.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('procurement.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Procurement & Stock</a>
                 @endif
             </div>
             @endif
@@ -76,34 +76,34 @@
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Campus & Portals</div>
                 @if($roleSlug === 'super_admin')
-                <a href="{{ route('hostel.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('hostel.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">14. Hostel & Mess</a>
-                <a href="{{ route('transport.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('transport.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">15. Transport & GPS</a>
+                <a href="{{ route('hostel.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('hostel.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Hostel & Mess</a>
+                <a href="{{ route('transport.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('transport.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Transport & GPS</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'student'], true))
-                <a href="{{ route('portal.student') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.student') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">17. Student Portal</a>
+                <a href="{{ route('portal.student') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.student') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Student Portal</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'faculty'], true))
-                <a href="{{ route('portal.faculty') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.faculty') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">18. Faculty Portal</a>
+                <a href="{{ route('portal.faculty') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.faculty') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Faculty Portal</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'parent'], true))
-                <a href="{{ route('portal.parent') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.parent') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">19. Parent Portal</a>
+                <a href="{{ route('portal.parent') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('portal.parent') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Parent Portal</a>
                 @endif
                 @if(in_array($roleSlug, ['super_admin', 'faculty'], true))
-                <a href="{{ route('lms.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('lms.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">20. LMS & E-Learning</a>
+                <a href="{{ route('lms.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('lms.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">LMS & E-Learning</a>
                 @endif
             </div>
 
             @if($roleSlug === 'super_admin')
             <div>
                 <div class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Career, Compliance & Admin</div>
-                <a href="{{ route('placements.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('placements.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">21. Placement & Career</a>
-                <a href="{{ route('scholarships.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('scholarships.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">22. Scholarships</a>
-                <a href="{{ route('certificates.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('certificates.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">23. Certificates & QR</a>
-                <a href="{{ route('grievances.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('grievances.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">24. Grievances & Discipline</a>
-                <a href="{{ route('community.events_alumni') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.events_alumni') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">25-26. Events & Alumni</a>
-                <a href="{{ route('community.accreditation_research') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.accreditation_research') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">27-28. NAAC/NIRF & Research</a>
-                <a href="{{ route('community.communication') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.communication') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">29. Communication</a>
-                <a href="{{ route('settings.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('settings.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">30. System & RBAC</a>
+                <a href="{{ route('placements.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('placements.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Placement & Career</a>
+                <a href="{{ route('scholarships.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('scholarships.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Scholarships</a>
+                <a href="{{ route('certificates.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('certificates.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Certificates & QR</a>
+                <a href="{{ route('grievances.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('grievances.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Grievances & Discipline</a>
+                <a href="{{ route('community.events_alumni') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.events_alumni') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Events & Alumni</a>
+                <a href="{{ route('community.accreditation_research') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.accreditation_research') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">NAAC/NIRF & Research</a>
+                <a href="{{ route('community.communication') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('community.communication') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">Communication</a>
+                <a href="{{ route('settings.index') }}" class="block px-3 py-1.5 rounded-lg {{ request()->routeIs('settings.*') ? 'bg-indigo-600 text-white' : 'hover:bg-slate-800' }}">System & RBAC</a>
             </div>
             @endif
         </nav>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Faculty & Staff HR')
-@section('header', 'Module 12: Faculty & Staff Management, Workload & Leaves')
+@section('header', 'Faculty & Staff Management, Workload & Leaves')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

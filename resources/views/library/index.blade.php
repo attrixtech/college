@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Library Management')
-@section('header', 'Module 9: Library Catalogue, Issue/Return, E-Books & Fines')
+@section('header', 'Library Catalogue, Issue/Return, E-Books & Fines')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Student Portal')
-@section('header', 'Module 17: Student Self-Service Portal')
+@section('header', 'Student Self-Service Portal')
 
 @section('content')
 @if($student)

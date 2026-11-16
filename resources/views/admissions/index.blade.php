@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Online Admission Management')
-@section('header', 'Module 2: Online Admission Management & Merit List')
+@section('header', 'Online Admission Management & Merit List')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-4 mb-6 flex flex-wrap items-center justify-between gap-4">

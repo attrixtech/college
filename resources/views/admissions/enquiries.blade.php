@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Enquiry & Admission CRM')
-@section('header', 'Module 3: Enquiry & Admission CRM')
+@section('header', 'Enquiry & Admission CRM')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

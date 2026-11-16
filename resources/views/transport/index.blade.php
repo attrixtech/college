@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Transport Management')
-@section('header', 'Module 15: Transport Fleet, Routes, Bus Stops & GPS Integration')
+@section('header', 'Transport Fleet, Routes, Bus Stops & GPS Integration')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

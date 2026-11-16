@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Communication & Notifications')
-@section('header', 'Module 29: Announcements, SMS, Email, WhatsApp & Emergency Alerts')
+@section('header', 'Announcements, SMS, Email, WhatsApp & Emergency Alerts')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

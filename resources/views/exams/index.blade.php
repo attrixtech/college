@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Examination Management')
-@section('header', 'Module 8: Examination Management, Marks Entry & SGPA/CGPA')
+@section('header', 'Examination Management, Marks Entry & SGPA/CGPA')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

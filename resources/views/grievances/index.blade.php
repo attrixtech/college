@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Grievance & Discipline')
-@section('header', 'Module 24: Student Grievance Redressal, Anti-Ragging & Discipline')
+@section('header', 'Student Grievance Redressal, Anti-Ragging & Discipline')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

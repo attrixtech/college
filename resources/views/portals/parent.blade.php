@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Parent Portal')
-@section('header', 'Module 19: Parent / Guardian Portal')
+@section('header', 'Parent / Guardian Portal')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-4 mb-6 flex items-center justify-between">

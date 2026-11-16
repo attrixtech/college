@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Learning Management System')
-@section('header', 'Module 20: Learning Management System (LMS, Video Lectures, Assignments & Forum)')
+@section('header', 'Learning Management System (LMS, Video Lectures, Assignments & Forum)')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

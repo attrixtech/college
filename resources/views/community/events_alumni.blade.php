@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Events & Alumni')
-@section('header', 'Modules 25 & 26: Campus Events, Clubs & Alumni Association')
+@section('header', 'Campus Events, Clubs & Alumni Association')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

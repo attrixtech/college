@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Student Information System')
-@section('header', 'Module 4: Student Information Management System (SIS)')
+@section('header', 'Student Information Management System (SIS)')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

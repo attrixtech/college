@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Scholarships & Financial Aid')
-@section('header', 'Module 22: Government (NSP/SC/ST/OBC/EWS) & Institutional Scholarships')
+@section('header', 'Government (NSP/SC/ST/OBC/EWS) & Institutional Scholarships')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

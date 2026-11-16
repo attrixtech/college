@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Course & Academic Management')
-@section('header', 'Module 5: Course, Curriculum (NEP 2020 / CBCS) & Academic Calendar')
+@section('header', 'Course, Curriculum (NEP 2020 / CBCS) & Academic Calendar')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

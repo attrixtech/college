@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Placement & Career Management')
-@section('header', 'Module 21: Placement Drives, Internships, Campus Recruitment & Offers')
+@section('header', 'Placement Drives, Internships, Campus Recruitment & Offers')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

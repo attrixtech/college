@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Dashboard & Analytics')
-@section('header', 'Module 1: Institutional Dashboard & Analytics')
+@section('header', 'Institutional Dashboard & Analytics')
 
 @section('content')
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-6">

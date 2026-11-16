@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Hostel Management')
-@section('header', 'Module 14: Boys & Girls Hostels, Room Allocation, Mess & Outing Logs')
+@section('header', 'Boys & Girls Hostels, Room Allocation, Mess & Outing Logs')
 
 @section('content')
 <div class="grid md:grid-cols-2 gap-6 mb-6">

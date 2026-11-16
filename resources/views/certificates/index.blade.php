@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Certificates & Document Management')
-@section('header', 'Module 23: Digital Certificates (Bonafide / TC / Migration / NOC) & QR Verification')
+@section('header', 'Digital Certificates (Bonafide / TC / Migration / NOC) & QR Verification')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6">

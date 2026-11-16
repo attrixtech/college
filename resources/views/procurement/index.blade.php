@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Procurement & Inventory')
-@section('header', 'Module 16: College Accounts, Procurement, Vendors & Stock Inventory')
+@section('header', 'College Accounts, Procurement, Vendors & Stock Inventory')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

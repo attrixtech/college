@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Attendance Management')
-@section('header', 'Module 7: Student & Faculty Attendance (Manual / QR / Biometric / RFID)')
+@section('header', 'Student & Faculty Attendance (Manual / QR / Biometric / RFID)')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

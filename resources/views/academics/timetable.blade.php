@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Class & Timetable Management')
-@section('header', 'Module 6: Class Sections & Timetable Management (with Conflict Detection)')
+@section('header', 'Class Sections & Timetable Management (with Conflict Detection)')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

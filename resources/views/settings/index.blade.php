@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'System Settings & RBAC')
-@section('header', 'Module 30: Multi-Campus, RBAC, Integrations, Audit Logs & Backup')
+@section('header', 'Multi-Campus, RBAC, Integrations, Audit Logs & Backup')
 
 @section('content')
 <div class="grid lg:grid-cols-3 gap-6 mb-6">

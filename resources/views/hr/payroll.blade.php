@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Payroll Management')
-@section('header', 'Module 13: Payroll Processing (PF, ESI, Professional Tax, TDS & Payslips)')
+@section('header', 'Payroll Processing (PF, ESI, Professional Tax, TDS & Payslips)')
 
 @section('content')
 <div class="bg-white rounded-xl border border-slate-200 p-5 mb-6 flex flex-wrap items-center justify-between gap-4">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Accreditation & Research')
-@section('header', 'Modules 27 & 28: NAAC / NIRF / AISHE / IQAC & Research / Patents')
+@section('header', 'NAAC / NIRF / AISHE / IQAC Compliance & Research / Patents')
 
 @section('content')
 <div class="grid lg:grid-cols-2 gap-6 mb-6">

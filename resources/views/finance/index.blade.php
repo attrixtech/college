@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'College Finance & Accounting')
-@section('header', 'Module 11: General Ledger, Vouchers (GST/TDS), Budgets & Financial Statements')
+@section('header', 'General Ledger, Vouchers (GST/TDS), Budgets & Financial Statements')
 
 @section('content')
 <div class="grid md:grid-cols-3 gap-4 mb-6">
