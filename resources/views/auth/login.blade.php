@@ -4,7 +4,7 @@
 @section('content')
 <div class="max-w-md mx-auto mt-8 bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
     <div class="mb-6">
-        <h2 class="text-xl font-bold text-slate-900">Sign in to Indian College ERP</h2>
+        <h2 class="text-xl font-bold text-slate-900">Sign in to thrumble.college</h2>
         <p class="text-xs text-slate-500 mt-1">Authentication is required to access the College Management System.</p>
     </div>
 
@@ -12,7 +12,7 @@
         @csrf
         <div>
             <label for="email" class="block text-xs font-medium text-slate-700 mb-1">Email Address</label>
-            <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="email" placeholder="you@webotapp.edu.in" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="email" placeholder="you@thrumble.college" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
         </div>
         <div>
             <label for="password" class="block text-xs font-medium text-slate-700 mb-1">Password</label>

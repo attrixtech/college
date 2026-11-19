@@ -15,7 +15,7 @@
             <input type="hidden" name="key" value="institution_name">
             <div>
                 <label class="block text-slate-600 mb-1 font-medium">Institution / Group Name</label>
-                <input type="text" name="value" value="{{ $settings->firstWhere('key', 'institution_name')?->value ?? 'WebotApp University Group' }}" required class="w-full rounded border border-slate-300 px-3 py-2 text-xs focus:ring-2 focus:ring-indigo-500">
+                <input type="text" name="value" value="{{ $settings->firstWhere('key', 'institution_name')?->value ?? 'thrumble.college' }}" required class="w-full rounded border border-slate-300 px-3 py-2 text-xs focus:ring-2 focus:ring-indigo-500">
             </div>
             <button class="w-full rounded bg-indigo-600 text-white font-semibold py-2 hover:bg-indigo-700">Save Master Institution Name</button>
         </form>

@@ -1,4 +1,4 @@
-# WebotApp Indian College ERP — Complete Higher-Education Management System
+# thrumble.college — Complete Higher-Education Management System
 
 A comprehensive, production-ready Indian College & Higher-Education Management System built on **Laravel 13** and **MySQL (XAMPP)**, compliant with **NEP 2020**, **CBCS**, **AISHE**, and **NAAC / NIRF** requirements.
 
@@ -52,8 +52,8 @@ A comprehensive, production-ready Indian College & Higher-Education Management S
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:webotapp-academy/college-management-software.git
-   cd college-management-software
+   git clone <repository-url>
+   cd college
    ```
 
 2. **Install Composer dependencies**:
@@ -93,7 +93,14 @@ A comprehensive, production-ready Indian College & Higher-Education Management S
 ## 🔒 Security & Roles
 
 Authentication is strictly required across the entire platform. Pre-seeded demo user accounts (password: `password`):
-- **Super Administrator**: `admin@webotapp.edu.in`
-- **Faculty Member**: `faculty@webotapp.edu.in`
-- **Student**: `student@webotapp.edu.in`
-- **Parent / Guardian**: `parent@webotapp.edu.in`
+- **Super Administrator**: `admin@thrumble.college`
+- **Faculty Member**: `faculty@thrumble.college`
+- **Student**: `student@thrumble.college`
+- **Parent / Guardian**: `parent@thrumble.college`
+
+---
+
+## 🙌 Credits
+
+- **Developed by**: [Attrix Technologies](https://www.attrixtech.com)
+- **Marketed by**: [Infusionn Pvt. Ltd.](https://www.infusionn.in)

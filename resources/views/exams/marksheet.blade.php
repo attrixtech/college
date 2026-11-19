@@ -6,7 +6,7 @@
 <div class="max-w-3xl mx-auto bg-white border-2 border-slate-800 rounded-xl p-8">
     <div class="flex justify-between items-start border-b-2 border-slate-800 pb-4 mb-5">
         <div>
-            <h2 class="text-xl font-bold text-slate-900 uppercase">{{ $student->college->name ?? 'WebotApp Institute of Technology' }}</h2>
+            <h2 class="text-xl font-bold text-slate-900 uppercase">{{ $student->college->name ?? 'thrumble.college' }}</h2>
             <p class="text-xs text-slate-600">{{ $student->college->university_affiliation ?? 'Autonomous / Affiliated University' }} &bull; NEP 2020 CBCS Grade Card</p>
         </div>
         <button onclick="window.print()" class="no-print px-3 py-1.5 rounded bg-indigo-600 text-white text-xs font-semibold">Print Transcript</button>

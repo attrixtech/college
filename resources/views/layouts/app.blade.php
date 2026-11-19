@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'WebotApp ERP') — WebotApp Indian College ERP</title>
+    <title>@yield('title', 'thrumble.college') — thrumble.college</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -20,8 +20,8 @@
     <aside class="no-print w-64 bg-slate-900 text-slate-200 flex-shrink-0 flex flex-col">
         <div class="px-5 py-4 border-b border-slate-800 flex items-center justify-between">
             <div>
-                <div class="text-lg font-bold tracking-tight text-white">Webot<span class="text-amber-400">App</span> <span class="text-xs font-normal text-indigo-400">ERP</span></div>
-                <div class="text-[11px] text-slate-400">Indian Higher-Ed Suite (30 Modules)</div>
+                <div class="text-lg font-bold tracking-tight text-white">thrumble<span class="text-amber-400">.college</span></div>
+                <div class="text-[11px] text-slate-400">Higher-Ed Management Suite (30 Modules)</div>
             </div>
         </div>
 
@@ -149,6 +149,14 @@
 
             @yield('content')
         </main>
+
+        <footer class="no-print bg-white border-t border-slate-200 px-6 py-3 text-center text-xs text-slate-500">
+            <span>&copy; {{ date('Y') }} thrumble.college</span>
+            &bull;
+            <span>Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline">Attrix Technologies</a></span>
+            &bull;
+            <span>Marketed by <a href="https://www.infusionn.in" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 hover:underline">Infusionn Pvt. Ltd.</a></span>
+        </footer>
     </div>
 </div>
 </body>
